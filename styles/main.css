@@ -9,16 +9,42 @@ h1, h2{
 .container{
     border:4px solid #ffff00;
     margin:auto;
-    padding:50px;
+    padding:30px;
     width: 100%;
+    max-width: 1200px;
+    min-width: 600px;
 } 
+.resize-img{
+    width:100%;
+    height:100%;
+}
+.sidebar{
+    width:100%;
+    height:100%;
+    flex:0 0 200px;
+}
+.section{
+    flex: 1 1 auto;
+}
 ul{
-    padding-left: 5%;
+    padding-left: 0%;
     list-style: none;
 }
 header{
     background-color: #263248;	
     border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+header a:hover{
+    color: #7E8AA2;
+    text-decoration: underline;	
+}
+#logo{
+    padding: 10px;
+}
+nav ul li{
+    display: inline;
 }
 nav li a{
     text-decoration: none;	
@@ -29,4 +55,15 @@ nav li a:hover{
 }
 nav li:first-child{
     border-left:none;	
+}
+main{
+    display:flex;
+    gap: 15px;
+}
+footer{
+    border-top:1px solid #ccc;
+    margin:20px 10px 10px 0;
+    font-size:0.8em;
+    text-align:center;
+    font-style:italic;
 }
